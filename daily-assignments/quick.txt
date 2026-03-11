@@ -1,1 +1,0 @@
-Quick content written using file_put_contents
