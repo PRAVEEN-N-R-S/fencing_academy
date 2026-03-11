@@ -1,0 +1,151 @@
+body{
+
+font-family:arial;
+background:#111;
+color:white;
+
+}
+
+.login-box{
+
+width:300px;
+margin:auto;
+margin-top:150px;
+padding:30px;
+background:#222;
+text-align:center;
+
+}
+
+input{
+
+width:90%;
+padding:10px;
+margin:10px;
+
+}
+
+button{
+
+padding:10px 20px;
+background:red;
+color:white;
+
+}
+.hero{
+height:500px;
+background:url("https://drive.google.com/file/d/1SwUCrSsSOZMW3V7VuZbbDT8Uwc1Z3MpO/view?usp=sharing") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+animation:zoom 20s infinite alternate;
+}
+
+@keyframes zoom{
+0%{background-size:100%}
+100%{background-size:120%}
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.btn{
+background:red;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:10px;
+display:inline-block;
+box-shadow:0 0 10px #ccc;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.coaches{
+flex-direction:column;
+}
+
+}
+
+.btn{
+background:#ff3c00;   /* join academy button background */
+color:white;          /* text color */
+padding:12px 25px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#ff6a00;
+color:white;
+}
+
+.gallery{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.gallery img{
+width:200px;
+height:150px;
+object-fit:cover;
+border-radius:6px;
+box-shadow:0 0 8px #ccc;
+}
+
+.slider{
+position:relative;
+width:80%;
+margin:auto;
+overflow:hidden;
+}
+
+.slide{
+display:none;
+}
+
+.slide img{
+width:100%;
+height:400px;
+object-fit:cover;
+border-radius:8px;
+}
+
+button{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:black;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+}
+
+button:first-of-type{
+left:10px;
+}
+
+button:last-of-type{
+right:10px;
+}
